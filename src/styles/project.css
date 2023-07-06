@@ -1,0 +1,201 @@
+.projectPage {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-transform: uppercase;
+    background-color: lightgray;
+}
+
+.projectPage header {
+    padding: 0 3vw;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    font-size: 0.9rem;
+    background-color: white;
+}
+
+.projectPage header div {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    width: 30%;
+}
+
+.projectPage header .leftHeader {
+    justify-content: flex-start;
+}
+
+.projectPage header .rightHeader {
+    justify-content: flex-end;
+}
+
+.projectPage header .rightHeader button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.projectPage header .leftHeader button {
+    height: 3vh;
+    width: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1px solid lightgrey;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.projectPage header .leftHeader a {
+    text-decoration: none;
+}
+
+section {
+    overflow-y: scroll;
+    padding-top: 80px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.workSection {
+    overflow-y: scroll;
+    padding: 2vh 0;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+    background-color: lightgray;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+
+.itemList {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2vw;
+    border: none;
+}
+
+.itemList div {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.itemList button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.addAndStyleButton {
+    width: 6vw;
+    height: 4vh;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.siteSection {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 70%;
+    background-color: white;
+}
+
+.siteSection iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.backButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    align-self: flex-start;
+    padding: 0 2vw;
+}
+
+.styleButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.styleButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+input[type="file"] {
+    display: none;
+    cursor: pointer;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.5);
+}
+  
+.modal {
+    overflow-y: scroll;
+    height: 90vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    max-width: 50vw;
+    width: 100%;
+    z-index: 100;
+    text-transform: none;
+}
+  
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
